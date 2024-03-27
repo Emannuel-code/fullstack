@@ -11,6 +11,17 @@ body {
   padding: 0;
 }
 
+.custom-card {
+  /* Adicione estilos personalizados aqui */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.custom-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .post {
   width: 400px;
   height: 300px;
@@ -142,6 +153,7 @@ span {
   display: flex;
   align-items: center;
 }
+
 
 .navbar .loggedInContainer {
   flex: 50%;
@@ -415,3 +427,4 @@ button[type='submit']:hover {
 @media screen and (min-width: 480px) {
   /* Aqui você pode adicionar estilos específicos para telas maiores, se necessário */
 }
+

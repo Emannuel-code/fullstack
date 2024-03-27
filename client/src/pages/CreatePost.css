@@ -1,0 +1,23 @@
+.create {
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+.form-label {
+    color: #6c7a89;
+}
+
+.text-danger {
+    color: #ff6347;
+}
+@media screen and (max-width: 720px) {
+    .container, .create {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container, .create {
+        padding-right: 20%;
+    }
+}

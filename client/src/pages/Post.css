@@ -1,0 +1,57 @@
+/* Post.css */
+.card {
+    width: 80%;
+    margin-top: 50px;
+  }
+  
+  .card-title,
+  .card-text {
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    color: rgb(82, 18, 18);
+    width: 100px;
+  }
+  .btn-primary {
+    width: 90px;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .add {
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .card {
+      width: 90%; /* Reduz a largura do card para dispositivos móveis */
+      margin-top: 30px; /* Diminui a margem superior */
+    }
+  
+    .btn-danger,
+    .btn-primary {
+      width: 80px; /* Reduz a largura dos botões */
+      font-size: 0.8rem; /* Reduz o tamanho da fonte dos botões */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      width: 95%; /* Reduz ainda mais a largura do card para dispositivos menores */
+      margin-top: 20px; /* Diminui a margem superior */
+    }
+  
+    .btn-danger,
+    .btn-primary {
+      width: 70px; /* Reduz ainda mais a largura dos botões */
+      font-size: 0.7rem; /* Reduz ainda mais o tamanho da fonte dos botões */
+    }
+  }
+  

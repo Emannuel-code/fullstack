@@ -1,9 +1,9 @@
-import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import React from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from "axios";
-import { useNavigate } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom';
+import './CreatePost.css';
 
 function CreatePost() {
     const initialValues = {
@@ -12,7 +12,7 @@ function CreatePost() {
     };
 
     const validationSchema = Yup.object().shape({
-        title: Yup.string().required("Preencha o Titulo!"),
+        title: Yup.string().required("Preencha o Título!"),
         postText: Yup.string().required("Preencha a Nota!")
     });
 
@@ -20,26 +20,34 @@ function CreatePost() {
         axios.post("http://localhost:3001/posts", data).then((response) => {
            navigate('/');
         });
-    }
+    };
 
     const navigate = useNavigate();
 
-  return (
-    <div className='createPostPage'>
-     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}> 
-        <Form>
-            <label>Titulo: </label>
-            <ErrorMessage name='title' component="span"/>
-            <Field id="inputCreatePost" name="title" placeholder="(Digite titulo...)"/>
-            <ErrorMessage name='postText' component="span"/>
-            <label>Anotação: </label>
-            <Field id="inputCreatePost" name="postText" placeholder="(Digite sua nota...)"/>
-
-             <button type='submit'> Criar Nota</button>
-        </Form>
-     </Formik>
-    </div>
-  )
+    return (
+        <div className='create mt-4'>
+            <div className='row justify-content-center'>
+                <div className='col-md-6'>
+                    <h2>Criar Nota</h2>
+                    <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}> 
+                        <Form>
+                            <div className='mb-3'>
+                                <label htmlFor='title' className='form-label'>Título</label>
+                                <Field id='title' name='title' className='form-control' placeholder='Digite o título...' />
+                                <ErrorMessage name='title' component='div' className='text-danger' />
+                            </div>
+                            <div className='mb-3'>
+                                <label htmlFor='postText' className='form-label'>Anotação</label>
+                                <Field id='postText' name='postText' as='textarea' className='form-control' rows='4' placeholder='Digite sua anotação...' />
+                                <ErrorMessage name='postText' component='div' className='text-danger' />
+                            </div>
+                            <button type='submit' className='btn btn-primary'>Criar Nota</button>
+                        </Form>
+                    </Formik>
+                </div>
+            </div>
+        </div>
+    );
 }
 
-export default CreatePost
+export default CreatePost;

@@ -1,0 +1,33 @@
+/* Home.css */
+
+
+
+.box {
+    padding-left: 40%;
+    
+}
+
+.custom-card {
+    background-color: #f0f5f9;
+    border: 1px solid #b7c2c9;
+    height: 100%;
+  }
+  
+  .custom-title {
+    color: #6c7a89;
+  }
+  
+  .custom-text {
+    color: #556b78;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .custom-card {
+      margin-bottom: 20px; 
+    }
+  
+    .box {
+      padding-left: 0; 
+    }
+  }
+  
