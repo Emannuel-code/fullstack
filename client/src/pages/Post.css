@@ -31,27 +31,27 @@
   
   @media screen and (max-width: 720px) {
     .card {
-      width: 90%; /* Reduz a largura do card para dispositivos móveis */
-      margin-top: 30px; /* Diminui a margem superior */
+      width: 90%; 
+      margin-top: 30px; 
     }
   
     .btn-danger,
     .btn-primary {
-      width: 80px; /* Reduz a largura dos botões */
-      font-size: 0.8rem; /* Reduz o tamanho da fonte dos botões */
+      width: 80px; 
+      font-size: 0.8rem; 
     }
   }
   
   @media screen and (max-width: 480px) {
     .card {
-      width: 95%; /* Reduz ainda mais a largura do card para dispositivos menores */
-      margin-top: 20px; /* Diminui a margem superior */
+      width: 95%; 
+      margin-top: 20px; 
     }
   
     .btn-danger,
     .btn-primary {
-      width: 70px; /* Reduz ainda mais a largura dos botões */
-      font-size: 0.7rem; /* Reduz ainda mais o tamanho da fonte dos botões */
+      width: 70px;
+      font-size: 0.7rem; 
     }
   }
   
