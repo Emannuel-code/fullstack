@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./Post.css"; // Importe o arquivo de estilos CSS
+import "./Post.css"; 
 
 function Post() {
   const { id } = useParams();
