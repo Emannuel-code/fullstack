@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Home.css'; // Importe o arquivo CSS para estilos personalizados
+import './Home.css';
 
 function Home() {
   const [listOfPosts, setListOfPost] = useState([]);
