@@ -384,47 +384,43 @@ button[type='submit']:hover {
 }
 
 
-/* Estilos para telas menores (dispositivos móveis) */
+
 @media screen and (max-width: 480px) {
   .post {
-    width: 95%; /* Reduz um pouco mais a largura dos posts */
-    margin-top: 10px; /* Diminui a margem superior dos posts */
+    width: 95%; 
+    margin-top: 10px; 
   }
 
   .formContainer {
-    width: 95%; /* Reduz um pouco mais a largura do formulário de criação de post */
+    width: 95%; 
   }
 
   .navbar .links {
-    display: none; /* Esconde os links na barra de navegação */
+    display: none; 
   }
 
   .navbar .loggedInContainer {
-    flex: 100%; /* Alarga a área do lado direito da barra de navegação */
-    justify-content: center; /* Centraliza os elementos */
+    flex: 100%;
+    justify-content: center; 
   }
 
   .navbar h1 {
-    display: none; /* Esconde o título na barra de navegação */
+    display: none; 
   }
 
   .postPage {
-    flex-direction: column; /* Muda a direção da página de exibição do post para vertical */
+    flex-direction: column;
   }
 
   .leftSide,
   .rightSide {
-    flex: 100%; /* Alarga as áreas laterais na exibição individual de post */
-    height: auto; /* Altura automática para acomodar o conteúdo */
+    flex: 100%; 
+    height: auto; 
   }
 
   .rightSide .listOfComments {
-    flex: auto; /* Ajusta a altura da lista de comentários para preencher o espaço disponível */
+    flex: auto; 
   }
 }
 
-/* Estilos para telas maiores (tablets e desktops) */
-@media screen and (min-width: 480px) {
-  /* Aqui você pode adicionar estilos específicos para telas maiores, se necessário */
-}
 
