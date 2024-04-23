@@ -1,10 +1,8 @@
 # TESTE FULLSTACK
 
-Projeto desenvolvido em um teste para uma vaga fullstack
-
+Desenvolvimento Full Stack com Relacionamento Muitos para Muitos
 ## 🚀 Começando
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
 ### 📋 Pré-requisitos
 
