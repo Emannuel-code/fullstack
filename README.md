@@ -54,7 +54,7 @@ Ferramentas Back-end:
 
 ## ✒️ Autores
 
-* **Desenvolvedor** - *Trabalho Inicial* - [Desenvolvedor](https://github.com/Emannuel-code)
+* **Emannuel de Melo** - *Trabalho completo* - [Desenvolvedor](https://github.com/Emannuel-code)
 
 ## 🎁 Expressões de gratidão
 
